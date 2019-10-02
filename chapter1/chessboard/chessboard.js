@@ -13,6 +13,5 @@ export const chessboard = size => {
     string += char
   }
 
-  console.log(string)
   return string
 }
