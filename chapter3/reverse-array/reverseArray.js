@@ -14,11 +14,11 @@ export const reverseArrayInPlace = arr => {
   let temp = 0
 
   const inner = counter => {
-    const endPossition = arr.length - (1 + counter)
+    const endPosition = arr.length - (1 + counter)
     counter <= arr.length / 2
       ? ((temp = arr[counter]),
-        (arr[counter] = arr[endPossition]),
-        (arr[endPossition] = temp),
+        (arr[counter] = arr[endPosition]),
+        (arr[endPosition] = temp),
         inner(counter + 1))
       : null
   }
