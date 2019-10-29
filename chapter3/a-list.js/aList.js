@@ -38,7 +38,7 @@ export const prepend = (el, list) => {
 
 export const nth = (index, list) => {
   let counter = index
-  let val = undefined
+  let val
 
   const inner = (counter, list) => {
     if (!list) {
