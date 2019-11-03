@@ -1,11 +1,6 @@
 export const loop = (val, test, update, body) => {
   const innerLoop = val => {
-    if (test(val) === false) {
-      return
-    } else {
-      body(val)
-      innerLoop(update(val))
-    }
+    test(val) !== false ? (body(val), innerLoop(update(val))) : null
   }
 
   innerLoop(val)
